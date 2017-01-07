@@ -1,0 +1,154 @@
+%!TEX root = ./main.tex
+\documentclass[11pt, oneside]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% page layout
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage{rotating}
+
+% toc renaming
+\addto\captionsenglish{
+  \renewcommand{\listfigurename}{List of figures}
+  \renewcommand{\listtablename}{List of tables}
+}
+
+% bib
+\usepackage[
+  backend=bibtex,
+  style=ieee,
+  maxcitenames=4]{biblatex}
+\usepackage{csquotes}
+\usepackage[nottoc]{tocbibind}
+
+\addbibresource{references.bib}
+
+% acro, table, lists etc
+\usepackage{acronym}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+
+\usepackage{lscape}
+
+% formatting
+\usepackage{color}
+
+
+% symbols
+\usepackage{eurosym}
+
+% refs
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+% indent
+\usepackage{indentfirst}
+\setlength\parindent{24pt}
+
+\hypersetup{
+  colorlinks=false, pdfborder={0 0 0},
+}
+
+\crefname{lstlisting}{listing}{listings}
+\Crefname{lstlisting}{Listing}{Listings}
+
+% listings
+\usepackage{listings}
+
+% todo
+\usepackage{todonotes}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\begin{document}
+
+\input{title.tex}
+
+\frontmatter
+
+\chapter{Revision history}
+\label{chp:rev_his}
+\input{revision.tex}
+
+\input{contents.tex}
+
+\chapter{Glossary}
+\label{chp:glos}
+\input{glossary.tex}
+
+\mainmatter
+
+\chapter{Introduction and goals}
+\label{chp:intro}
+\input{introduction.tex}
+
+\chapter{Architecture constraints}
+\label{chp:arch_constr}
+\input{arch_constraints.tex}
+
+\chapter{System scope and context}
+\label{chp:syst_context}
+\input{syst_context.tex}
+
+\chapter{Solution strategy}
+\label{chp:sol_strategy}
+\input{sol_strategy.tex}
+
+\chapter{Building block view}
+\label{chp:build_block}
+\input{build_block.tex}
+
+\chapter{Runtime view}
+\label{chp:runtime}
+\input{runtime.tex}
+
+\chapter{Deployment view}
+\label{chp:deployment}
+\input{deployment.tex}
+
+\chapter{Concepts}
+\label{chp:concepts}
+\input{concepts.tex}
+
+\chapter{Design decisions}
+\label{chp:design_decisions}
+\input{design_decisions.tex}
+
+\chapter{Quality scenarios}
+\label{chp:quality_scenarios}
+\input{quality_scenarios.tex}
+
+\listoftodos[Notes]
+
+\appendix
+
+\chapter{Time tracking}
+\label{chp:time_track}
+\input{time_tracking.tex}
+
+\backmatter
+
+\printbibliography
+
+\end{document}

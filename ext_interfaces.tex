@@ -1,0 +1,38 @@
+\begin{table}[H]
+  \centering
+  \begin{tabularx}{\linewidth}{l|X}
+    \textbf{Channel}      & Beacon $\Rightarrow$ Mobile app \\ \hline
+    \textbf{Description}  & Beacons detect mobile phones in their proximity having installed the application and initialise a connection.\\ \hline
+    \textbf{Connection}   & Bluetooth \\ \hline
+    \textbf{Protocol}     & iBeacon \\ \hline
+    \textbf{Frequency}    & The train has left a station and a mobile phone is in range of the beacon. \\ \hline
+  \end{tabularx}
+  \caption{Interface - Beacon to phone}
+  \label{tbl:beacon_to_phone}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Channel}      & Beacon $\Rightarrow$ Local train server \\ \hline
+		\textbf{Description}  & Beacons send information gathered every time a train departs from a station.\\ \hline
+		\textbf{Connection}   & Bluetooth \\ \hline
+		\textbf{Protocol}     & iBeacon \\ \hline
+		\textbf{Frequency}    & The train has left a station. \\ \hline
+	\end{tabularx}
+	\caption{Interface - Beacon to server}
+	\label{tbl:beacon_to_server}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Channel}      & Local server $\Rightarrow$ Central server \\ \hline
+		\textbf{Description}  & The local server situated inside the train sends information gathered periodically to the central server if an internet connection is possible.\\ \hline
+		\textbf{Connection}   & Internet \\ \hline
+		\textbf{Protocol}     & UDP \\ \hline
+		\textbf{Frequency}    & Once every 20 min or when a connection is possible. \\ \hline
+	\end{tabularx}
+	\caption{Interface - Local server to central server}
+	\label{tbl:local_to_central}
+\end{table}
