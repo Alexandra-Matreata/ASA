@@ -6,13 +6,22 @@
 \BOOKMARK [0][-]{chapter.2}{Architecture constraints}{}% 6
 \BOOKMARK [0][-]{chapter.3}{System scope and context}{}% 7
 \BOOKMARK [1][-]{section.3.1}{Business context}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{Technical context}{chapter.3}% 9
-\BOOKMARK [1][-]{section.3.3}{External interfaces}{chapter.3}% 10
-\BOOKMARK [0][-]{chapter.4}{Solution strategy}{}% 11
-\BOOKMARK [0][-]{chapter.5}{Building block view}{}% 12
-\BOOKMARK [0][-]{chapter.6}{Runtime view}{}% 13
-\BOOKMARK [0][-]{chapter.7}{Deployment view}{}% 14
-\BOOKMARK [0][-]{chapter.8}{Concepts}{}% 15
-\BOOKMARK [0][-]{chapter.9}{Design decisions}{}% 16
-\BOOKMARK [0][-]{chapter.10}{Quality scenarios}{}% 17
-\BOOKMARK [0][-]{appendix.A}{Time tracking}{}% 18
+\BOOKMARK [1][-]{section.3.2}{Logical view}{chapter.3}% 9
+\BOOKMARK [1][-]{section.3.3}{Technical context}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.4}{External interfaces}{chapter.3}% 11
+\BOOKMARK [0][-]{chapter.4}{Solution strategy}{}% 12
+\BOOKMARK [1][-]{section.4.1}{Security}{chapter.4}% 13
+\BOOKMARK [1][-]{section.4.2}{Compatibility}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.3}{Reliability}{chapter.4}% 15
+\BOOKMARK [0][-]{chapter.5}{Building block view}{}% 16
+\BOOKMARK [0][-]{chapter.6}{Runtime view}{}% 17
+\BOOKMARK [0][-]{chapter.7}{Deployment view}{}% 18
+\BOOKMARK [0][-]{chapter.8}{Concepts}{}% 19
+\BOOKMARK [1][-]{section.8.1}{Domain model}{chapter.8}% 20
+\BOOKMARK [1][-]{section.8.2}{Architectural patterns}{chapter.8}% 21
+\BOOKMARK [1][-]{section.8.3}{Security}{chapter.8}% 22
+\BOOKMARK [1][-]{section.8.4}{Compatibility}{chapter.8}% 23
+\BOOKMARK [1][-]{section.8.5}{Reliability}{chapter.8}% 24
+\BOOKMARK [0][-]{chapter.9}{Design decisions}{}% 25
+\BOOKMARK [0][-]{chapter.10}{Quality scenarios}{}% 26
+\BOOKMARK [0][-]{appendix.A}{Time tracking}{}% 27

@@ -18,22 +18,40 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Business context}{3}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Technical context}{3}{section.3.2}
+\contentsline {section}{\numberline {3.2}Logical view}{3}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}External interfaces}{4}{section.3.3}
+\contentsline {section}{\numberline {3.3}Technical context}{8}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Solution strategy}{6}{chapter.4}
+\contentsline {section}{\numberline {3.4}External interfaces}{9}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Building block view}{7}{chapter.5}
+\contentsline {chapter}{\numberline {4}Solution strategy}{10}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Runtime view}{8}{chapter.6}
+\contentsline {section}{\numberline {4.1}Security}{10}{section.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Deployment view}{9}{chapter.7}
+\contentsline {section}{\numberline {4.2}Compatibility}{10}{section.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Concepts}{10}{chapter.8}
+\contentsline {section}{\numberline {4.3}Reliability}{10}{section.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Design decisions}{11}{chapter.9}
+\contentsline {chapter}{\numberline {5}Building block view}{11}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {10}Quality scenarios}{12}{chapter.10}
+\contentsline {chapter}{\numberline {6}Runtime view}{12}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Time tracking}{14}{appendix.A}
+\contentsline {chapter}{\numberline {7}Deployment view}{13}{chapter.7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {8}Concepts}{14}{chapter.8}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.1}Domain model}{14}{section.8.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.2}Architectural patterns}{14}{section.8.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.3}Security}{14}{section.8.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.4}Compatibility}{14}{section.8.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {8.5}Reliability}{14}{section.8.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {9}Design decisions}{15}{chapter.9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {10}Quality scenarios}{16}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Time tracking}{18}{appendix.A}

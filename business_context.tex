@@ -10,7 +10,7 @@ The following diagram displays the main use cases of the system which will be fu
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{Pictures/main_use_cases.png}
+	\includegraphics[width=500pt]{Pictures/main_use_cases.png}
 	\caption{Main use cases}
 	\label{fig:main_use_cases}
 \end{figure}
@@ -18,7 +18,7 @@ The following diagram displays the main use cases of the system which will be fu
 \begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{l|X}
-		\textbf{Usecase}      & Connect phone \\ \hline
+		\textbf{Usecase}      & Connect phone to beacon \\ \hline
 		\textbf{Main actor}  & Phone app \\ \hline
 		\textbf{Goal}   & Connect to the beacon \\ \hline
 		\textbf{Preconditions}     & \begin{itemize}
@@ -57,14 +57,26 @@ The following diagram displays the main use cases of the system which will be fu
 \begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{l|X}
-		\textbf{Usecase}      &  \\ \hline
-		\textbf{Main actor}  & \\ \hline
-		\textbf{Goal}   &  \\ \hline
-		\textbf{Precondition}     &  \\ \hline
-		\textbf{Main scenario}    &  \\ \hline
-		\textbf{Exception scenarios} & \\ \hline
-		\textbf{Postconditions} & \\ \hline
-		\textbf{Related requirements} & \\ \hline
+		\textbf{Usecase}      &  Disconnect from beacon\\ \hline
+		\textbf{Main actor}  & Beacon \\\hline
+		\textbf{Goal}   &  Register a phone disconnection \\ \hline
+		\textbf{Precondition}     &  \begin{itemize}
+			\item Bluetooth is switched on
+			\item Use case 1
+		\end{itemize}\\ \hline
+		\textbf{Main scenario}    &  \begin{itemize}
+			\item The user leaves the train
+			\item The beacon checks available connections
+			\item The beacon sends gathered information to local server
+			\item Local server sends information to main server
+			\item Main server computes distance travelled by user
+		\end{itemize}\\ \hline
+		\textbf{Exception scenarios} & \begin{itemize}
+			\item Phone battery dies before user leaves the train
+			\item The beacon malfunctions and cannot check for connections
+		\end{itemize}\\ \hline
+		\textbf{Postconditions} & Travel distance and price are computed\\ \hline
+		\textbf{Related requirements} & NFR3, FR3, FR10, FR9 \\ \hline
 	\end{tabularx}
 	\caption{Main use cases - use case 2}
 	\label{tbl:uc2}
@@ -73,14 +85,28 @@ The following diagram displays the main use cases of the system which will be fu
 \begin{table}[H]
 	\centering
 	\begin{tabularx}{\linewidth}{l|X}
-		\textbf{Usecase}      &  \\ \hline
-		\textbf{Main actor}  & \\ \hline
-		\textbf{Goal}   &  \\ \hline
-		\textbf{Precondition}     &  \\ \hline
-		\textbf{Main scenario}    &  \\ \hline
-		\textbf{Exception scenarios} & \\ \hline
-		\textbf{Postconditions} & \\ \hline
-		\textbf{Related requirements} & \\ \hline
+		\textbf{Usecase}  &  Calculate travel fee\\ \hline
+		\textbf{Main actor}  & Server\\ \hline
+		\textbf{Goal}   &  Charge user for travelled distance\\ \hline
+		\textbf{Precondition} & \begin{itemize}
+			\item Usecase 1
+			\item Usecase 2
+		\end{itemize} \\ \hline
+		\textbf{Main scenario}  & \begin{itemize}
+			\item Main server receives information regarding users which are still connected
+			\item Main server compares accounts currently connected with accounts connected for previous stop
+			\item Users which were connected previously and are not connected anymore are identified
+			\item Travel distance and fee are calculated for identified users
+		\end{itemize} \\ \hline
+		\textbf{Exception scenarios} & \begin{itemize}
+			\item Information cannot be transmitted between local and main servers
+			\item Account is not identified
+		\end{itemize}\\ \hline
+		\textbf{Postconditions} & \begin{itemize}
+			\item Notification regarding payment is sent to user
+			\item Payment is made
+		\end{itemize}\\ \hline
+		\textbf{Related requirements} & FR3, FR9, FR10, FR13\\ \hline
 	\end{tabularx}
 	\caption{Main use cases - use case 3}
 	\label{tbl:uc3}
