@@ -28,7 +28,7 @@ In this manner, the security mechanisms will focus mostly on the interface level
 The compatibility of the system mainly refers to mobile phones compatibility. The system will take into consideration different types of OS and different frequencies. While not all of these possibilities are taken into consideration, the system will focuss on the most used ones:
 
 \begin{itemize}
-	\item OS compatibility(Compatibility-NF-1.1): \\
+	\item OS compatibility(Compatibility-NF-1.1):
 	\begin{itemize}
 		\item Android
 		\item iOS
@@ -38,3 +38,18 @@ The compatibility of the system mainly refers to mobile phones compatibility. Th
 \end{itemize}
 
 \section{Reliability}
+The reliability of the system takes into consideration 3 main characteristics: availability, fault tolerance and recoverability\cite{iso}.
+\begin{itemize}
+	\item \textbf{Availability:} \\
+	Both the local and central servers will be provided with backup servers. The information stored in the local backup servers will be updated every time the train leaves a station, while the central backup server will be updated more frequently, namely every time the central server receives information from one of the local servers. 
+	
+	This will allow the backup servers to be fully up to date and to minimize information loss. The backup servers will remain in a passive mode and only become functional once their corresponding main server fails to respond. Once the main server is repaired, information handling will be switched to it and the backup server will return to passive mode.
+	
+	Every time a main server receives information(local server from beacons and main server from local one), it will notify the senders of having received the packages through a heartbeat signal. If this signal fails to be sent, the backup server will be started.
+	
+	\item \textbf{Fault tolerance:} \\
+	Fault tolerance will be achieved by the system using resource redundancy and duplication of information. By using the backup servers and updating their information regularly, a copy of the information will be stored at all times minimizing information loss. Also, the beacons will be placed in such a manner as to have intersecting range areas, allowing at least two beacons to monitor a specific location in the same time.
+	
+	\item \textbf{Recoverability:} \\
+	By enabling components to keep track of received information packages, the system state is known at each point in time, which allows a very fast detection of defective components. By minimizing error detection time, the recoverability time is also minimized.
+\end{itemize}
