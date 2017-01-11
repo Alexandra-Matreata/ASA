@@ -28,6 +28,56 @@ The following stakeholders are described along with their concerns. These concer
 \textbf{Third party payment systems} are companies that provide a paying system for the passengers.  
 
 
+\section{Key Drivers}
+
+
+In order to determine the most important key drivers for our system, the stakeholders are required to give points to the key drivers according to what they consider as the most important driver for the system. Since the weight of the decision differs among our stakeholders, they are given different amount of points. The train companies (customer) have 150, the architects have 120, the developer team has 100, and the passangers 80. Considering the distribution of the points, the top 3 will be chosen as key drivers of our system. \cref{tbl:key_drivers} below shows how the different stakeholders used there points.
+
+\begin{table}[H]
+  \centering
+  \begin{tabularx}{\textwidth}{l|lllllll}
+    & \rotatebox[origin=l]{75}{Security} & \rotatebox[origin=l]{75}{Reliability} & \rotatebox[origin=l]{75}{Compatibility}& \rotatebox[origin=l]{75}{Performance} & \rotatebox[origin=l]{75}{Maintainability} & \rotatebox[origin=l]{75}{Scalability} \\ \hline
+   
+    Train Companies(Customer)    & 50  & 50 & 20 & 30          & 0           & 0      \\
+    Architects                   & 50  & 30 & 20 & 20          & 0           & 0      \\
+    Developer team               &  0  & 10 & 10 & 20          & 50          & 10     \\
+    Passengers                   & 40  & 10 & 30  & 0          & 0           & 0      \\
+    Total                & \textbf{140} & \textbf{100}& \textbf{80}  & 70  & 50   & 10    \\
+  \end{tabularx}
+  \caption{Key driver selection}
+  \label{tbl:key_drivers}
+\end{table}
+
+
+\begin{description}[align=left]
+  \item[Security] is concerned with the management of possible risks that may affect our system. Since \ac{ET} is working with delicate data which involves payments and bank account records The stakeholders came to the agreement that security is the most important key driver of the system. It is mostly affected by the ability of the system to survive attacks, threats, the algorithms used, etc. The customers(train companies) and passengers are mostly concerned with security. 
+  
+  \item[Reliability] is measured as the probability that a system will not fail and that it will perform its intended function for a specified time interval. This can be guaranteed by  redundancy, implementing an extra database, increase in resources, implementation of more than a single point of failure for different parts of the system, etc. Passengers are mostly concerned with the reliability of the system as they don't want to risk not having a ticket, while train companies do not want to get any economical loss. 
+  
+  \item[Compatibility] is the ability of the software to work with other systems. In the case of \ac{ET}, the system should be able to adapt to three different types of the operating system of the smartphones: iOS, Android, Windows. The stakeholders that are mostly concerned with this, are the passangers and the train companies.  
+
+  \item[Maintainability]  is the \cite{web:software} ability of the system to undergo changes with a degree of ease. These changes could impact components, services, features, and interfaces when adding or changing the functionality, fixing errors, and meeting new business requirements.
+
+  \item[Performance] is concerned with how long it takes the system to respond to an event. The performance of our system is affected by:
+
+  \begin{itemize}
+    \item Latency (time between the arrival of the stimulus and the systems response to it)
+    \item Deadlines in processing
+    \item Throughput of the system (the number of transactions the system can process in a second)
+    \item Jitter of the response (the variation in latency)
+    \item Miss rate (the number of events not processed because the system was busy to respond)
+    \item Data loss (data that was lost because the system was busy)
+  \end{itemize}
+
+  Within our system context, the performance which brings most interest to the stakeholders is the performance of \ac{ET} during the event itself. This is related to the detection of risky individuals, matching them to their profiles in the database and fight detection.
+  The stakeholders that are mostly concerned about performance are the architects and the customers.
+
+\item[Scalability] is ability \cite{web:df} of a system to either handle increases in load without impact on the performance of the system, or the ability to be readily enlarged. 
+
+\end{description}
+
+
+
 
 \section{Functional requirements}
 
@@ -100,3 +150,13 @@ The following stakeholders are described along with their concerns. These concer
     \end{tabularx}
   \end{table}
 }
+
+
+\section{Constraints}
+
+A constraints is \cite{web:bus-doc} considered as an element, factor, or subsystem that works as a bottleneck. It restricts an entity, project, or system (such as a manufacturing or decision making process) from achieving its potential (or higher level of output) with reference to its goal. We are going to analyze the constraints of our systems in three different categories: organisational, business and technological.
+
+\subsection{Organisational Constraints}
+\subsection{Business Constraints}
+\subsection{Technological Constraints}
+

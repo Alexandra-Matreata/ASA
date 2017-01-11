@@ -9,29 +9,38 @@
 \BOOKMARK [1][-]{section.2.1}{Stakeholders}{chapter.2}% 9
 \BOOKMARK [2][-]{subsection.2.1.1}{Represented stakeholders}{section.2.1}% 10
 \BOOKMARK [2][-]{subsection.2.1.2}{Non represented stakeholders}{section.2.1}% 11
-\BOOKMARK [1][-]{section.2.2}{Functional requirements}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Non-functional requirements}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Security}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.2}{Reliability}{section.2.3}% 15
-\BOOKMARK [2][-]{subsection.2.3.3}{Compatibility}{section.2.3}% 16
-\BOOKMARK [0][-]{chapter.3}{System scope and context}{}% 17
-\BOOKMARK [1][-]{section.3.1}{Business context}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.2}{Logical view}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.3}{Technical context}{chapter.3}% 20
-\BOOKMARK [1][-]{section.3.4}{External interfaces}{chapter.3}% 21
-\BOOKMARK [0][-]{chapter.4}{Solution strategy}{}% 22
-\BOOKMARK [1][-]{section.4.1}{Security}{chapter.4}% 23
-\BOOKMARK [1][-]{section.4.2}{Compatibility}{chapter.4}% 24
-\BOOKMARK [1][-]{section.4.3}{Reliability}{chapter.4}% 25
-\BOOKMARK [0][-]{chapter.5}{Building block view}{}% 26
-\BOOKMARK [0][-]{chapter.6}{Runtime view}{}% 27
-\BOOKMARK [0][-]{chapter.7}{Deployment view}{}% 28
-\BOOKMARK [0][-]{chapter.8}{Concepts}{}% 29
-\BOOKMARK [1][-]{section.8.1}{Domain model}{chapter.8}% 30
-\BOOKMARK [1][-]{section.8.2}{Architectural patterns}{chapter.8}% 31
-\BOOKMARK [1][-]{section.8.3}{Security}{chapter.8}% 32
-\BOOKMARK [1][-]{section.8.4}{Compatibility}{chapter.8}% 33
-\BOOKMARK [1][-]{section.8.5}{Reliability}{chapter.8}% 34
-\BOOKMARK [0][-]{chapter.9}{Design decisions}{}% 35
-\BOOKMARK [0][-]{chapter.10}{Quality scenarios}{}% 36
-\BOOKMARK [0][-]{appendix.A}{Time tracking}{}% 37
+\BOOKMARK [1][-]{section.2.2}{Key Drivers}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.3}{Functional requirements}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.4}{Non-functional requirements}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.4.1}{Security}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.2}{Reliability}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.3}{Compatibility}{section.2.4}% 17
+\BOOKMARK [1][-]{section.2.5}{Constraints}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.5.1}{Organisational Constraints}{section.2.5}% 19
+\BOOKMARK [2][-]{subsection.2.5.2}{Business Constraints}{section.2.5}% 20
+\BOOKMARK [2][-]{subsection.2.5.3}{Technological Constraints}{section.2.5}% 21
+\BOOKMARK [0][-]{chapter.3}{System scope and context}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Business context}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.2}{Logical view}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.3}{Technical context}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.4}{External interfaces}{chapter.3}% 26
+\BOOKMARK [0][-]{chapter.4}{Solution strategy}{}% 27
+\BOOKMARK [1][-]{section.4.1}{Security}{chapter.4}% 28
+\BOOKMARK [1][-]{section.4.2}{Compatibility}{chapter.4}% 29
+\BOOKMARK [1][-]{section.4.3}{Reliability}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{Software architecture}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Logical View}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.1.1}{Primary presentation}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.2}{Element Catalog}{section.5.1}% 34
+\BOOKMARK [1][-]{section.5.2}{Process View}{chapter.5}% 35
+\BOOKMARK [1][-]{section.5.3}{Data View}{chapter.5}% 36
+\BOOKMARK [1][-]{section.5.4}{Physical View}{chapter.5}% 37
+\BOOKMARK [0][-]{chapter.6}{Concepts}{}% 38
+\BOOKMARK [1][-]{section.6.1}{Domain model}{chapter.6}% 39
+\BOOKMARK [1][-]{section.6.2}{Architectural patterns}{chapter.6}% 40
+\BOOKMARK [1][-]{section.6.3}{Security}{chapter.6}% 41
+\BOOKMARK [1][-]{section.6.4}{Compatibility}{chapter.6}% 42
+\BOOKMARK [1][-]{section.6.5}{Reliability}{chapter.6}% 43
+\BOOKMARK [0][-]{chapter.7}{Design decisions}{}% 44
+\BOOKMARK [0][-]{chapter.8}{Quality scenarios}{}% 45
+\BOOKMARK [0][-]{appendix.A}{Time tracking}{}% 46
