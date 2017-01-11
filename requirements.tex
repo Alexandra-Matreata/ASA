@@ -1,0 +1,102 @@
+In this section the main Stakeholders and the functional and non functional requirements of Easy Ticketing will be introduced.
+
+\section{Stakeholders}
+The following stakeholders are described along with their concerns. These concerns eventually determine the key drivers of the service.
+
+\subsection{Represented stakeholders}
+
+
+\textbf{Passengers}  are the direct users of Easy Ticketing. The typical target customer is the traveler who uses the train systems regularly. Passengers are mainly concerned with the reliability and the availability of the system as well as the security often their data and the regular payment of the ticket. If the service is not available then they risk not having a ticket and eventually getting a fine.  Another concern of the passengers could be the incompatibility of their phone with the beacon, which could risk the validity of their ticket.
+
+\textbf{Customers} are the owners of the Easy Ticketing. The typical target are the large train companies, operating in the Netherlands. The companies are mainly concerned with the reliability of the system, since many passengers could end up not paying, given that there is a breakdown of the system. This could result in monetary loss for the company. Another main concern of our customer is the security. If the system is hacked the  company loses money and this is certainly something that the company wants to avoid.
+
+\textbf{Developers and maintenance team} is responsible for building the software part of our system, test and debug it afterwards. They are mainly concerned with the maintainability, testability and portability of the system.
+
+\textbf{Architects} will be the team that will design the system. Their main concern is satisfying the needs of all the stakeholders and finding the best solution. They determine the feasibility of desired properties and functions, and guarantee a satisfactory end-product.
+
+
+\subsection{Non represented stakeholders}
+
+
+\textbf{Hardware companies}  are the companies that provide beacons for our system. In our case they are non represented stakeholders, since they do not have much say  
+
+
+\textbf{Hardware maintenance team} maintains the physical side of the system, in our case beacons and takes care of handling malfunctions.
+
+\textbf{Ticket inspectors} are the employees of the Train companies, that check the passengers, whether they have an available ticket or not. The are mostly concerned with the security and the reliability of the system.
+
+\textbf{Third party payment systems} are companies that provide a paying system for the passengers.  
+
+
+
+\section{Functional requirements}
+
+{
+  \renewcommand{\arraystretch}{1.5}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\linewidth}{l|l|X}
+     	FR-1 & Must & There should be at least 2 different ways of payment. \\ \hline
+     	FR-2 & Must & The beacons shall connect to a phone's bluetooth and application.\\ \hline
+     	FR-3 & Must & The system MUST/WILL/HAVE TO charge a person based on account/travel location. \\
+     	\hline
+     	FR-4 & Must & The system should verify which cart sends which data (or train actually). \\
+     	\hline
+     	FR-5 & Must & Phones should be verified based on accounts.\\ \hline        
+     	FR-6 & Must & The system should provide a back-up to log out of the trip in case battery dies via touch-screen panels in stations.\\ \hline
+     	FR-7 & Must & The beacons will start connecting to mobile devices once the train is 300m away from the station.\\ \hline
+    	FR-8 & Must & Phone application should have beacon verification.\\	\hline
+	    FR-9 & Must & The train will collect data from the carts/beacons and send them to the server  after leaving a station. \\ 	\hline
+	    FR-10 & Must & The system should charge on trip exit.\\ 	\hline
+    	FR-11 & Must & Once a connection between a beacon and a phone is established, the system must send a notification to the user’s phone.\\ 	\hline
+	    FR-12 & Must & Application provides a user interface enabling the user to check his account, update amounts.
+        \\	\hline
+	    FR-13 & Must & The beacons register both logged in and not logged in users and match the account with the phone even if the user logs in later on during the journey. \\
+
+    \end{tabularx}
+    \caption{Functional requirements}
+  \end{table}
+}
+
+\section{Non-functional requirements}
+
+\subsection{Security}
+{
+  \renewcommand{\arraystretch}{1.5}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{l|l|X}
+      NF-1.1 &Must & One account is allowed to login at one smartphone at one time.\\ \hline
+      NF-1.2 &Must & Users will need to authenticate in order to login. \\ \hline
+      NF-1.3 &Must & The data information provided by the costumers will be safe and secure. \\ \hline
+      NF-1.4 &Must & Every request from a subserver component to the main repository must be verified so that the repository knows at all times who sent the request. \\  
+    \end{tabularx}
+  \end{table}
+}
+
+\subsection{Reliability}
+{
+  \renewcommand{\arraystretch}{1.5}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{l|l|X}
+      NF-1.1 &Must & The databases must be available 99.9999\% of the time during a train journey.\\ \hline
+      NF-1.2 &Must & The system must be fault tolerant.  \\ \hline
+      NF-1.3 &Must & The beacons inside the carts will be operational at all times when the train is working. \\ \hline
+      NF-1.4 &Must & The Server/database will be 99.999\% available , with backups . \\  
+    \end{tabularx}
+  \end{table}
+}
+
+\subsection{Compatibility}
+{
+  \renewcommand{\arraystretch}{1.5}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{l|l|X}
+      NF-1.1 &Must & The system should be compatible with the 3 main os (ios, android, windows). \\ \hline
+      NF-1.2 &Must & Compatible frequencies. \\ 
+     
+    \end{tabularx}
+  \end{table}
+}

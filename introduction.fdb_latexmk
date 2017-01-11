@@ -1,0 +1,12 @@
+# Fdb version 3
+["pdflatex"] 1484131601 "introduction.tex" "/home/aida/ASA/introduction.pdf" "introduction" 1484131601
+  "/etc/texmf/web2c/texmf.cnf" 1476384546 1101 af7716885e081ab43982cab7b4672c1a ""
+  "/home/aida/ASA/introduction.aux" 1484131601 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
+  "/usr/share/texmf/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1476384633 3854709 b581bdb95766b6af67f4f574e416c04f ""
+  "introduction.tex" 1484131601 888 3920460f7d1d94c5ee5bfefef0f470d7 ""
+  (generated)
+  "/home/aida/ASA/introduction.pdf"
+  "/home/aida/ASA/introduction.log"
+  "introduction.log"

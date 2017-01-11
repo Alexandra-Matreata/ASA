@@ -320,11 +320,12 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/aida/ASA/introduction.tex
 INPUT /home/aida/ASA/introduction.tex
-INPUT /home/aida/ASA/arch_constraints.tex
-INPUT /home/aida/ASA/arch_constraints.tex
-INPUT /home/aida/ASA/syst_context.tex
-INPUT /home/aida/ASA/syst_context.tex
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/aida/ASA/requirements.tex
+INPUT /home/aida/ASA/requirements.tex
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT /home/aida/ASA/syst_context.tex
+INPUT /home/aida/ASA/syst_context.tex
 INPUT /home/aida/ASA/business_context.tex
 INPUT /home/aida/ASA/business_context.tex
 INPUT /home/aida/ASA/Pictures/main_use_cases.png

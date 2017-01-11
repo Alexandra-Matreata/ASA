@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.13)  11 JAN 2017 11:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.13)  11 JAN 2017 13:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1310,7 +1310,7 @@ LaTeX Info: Redefining \nameref on input line 84.
 \c@lstlisting=\count339
 
 ABD: EveryShipout initializing macros (/home/aida/ASA/title.tex
-<Pictures/logo.jpg, id=115, 3593.425pt x 491.8375pt>
+<Pictures/logo.jpg, id=155, 3593.425pt x 491.8375pt>
 File: Pictures/logo.jpg Graphic file (type jpg)
  <use Pictures/logo.jpg>
 Package pdftex.def Info: Pictures/logo.jpg used on input line 5.
@@ -1330,11 +1330,11 @@ go.jpg>]) (/home/aida/ASA/revision.tex) (/home/aida/ASA/contents.tex [1
 ]
 (/home/aida/ASA/main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 19.
+(Font)              <10.95> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 19.
+(Font)              <8> on input line 15.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 19.
+(Font)              <6> on input line 15.
  [2
 
 ])
@@ -1358,22 +1358,25 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ]
 Chapter 1.
-(/home/aida/ASA/introduction.tex)pdfTeX warning (ext4): destination with the sa
-me identifier (name{page.1}) has been already used, duplicate ignored
+(/home/aida/ASA/introduction.tex
+Package acronym Info: Label `acro:ET' newly defined as it shall be overridden
+although it is yet undefined on input line 4.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.106 \chapter
-              {Architecture constraints} [1
+l.11 
+      [1
 
 
-]
+]) [2]
 Chapter 2.
-(/home/aida/ASA/arch_constraints.tex) [2
+(/home/aida/ASA/requirements.tex [3
 
-]
+] [4] [5]) [6]
 Chapter 3.
 (/home/aida/ASA/syst_context.tex (/home/aida/ASA/business_context.tex
-<Pictures/main_use_cases.png, id=202, 1193.96063pt x 621.07031pt>
+<Pictures/main_use_cases.png, id=278, 1193.96063pt x 621.07031pt>
 File: Pictures/main_use_cases.png Graphic file (type png)
 
 <use Pictures/main_use_cases.png>
@@ -1384,14 +1387,14 @@ Overfull \hbox (140.0pt too wide) in paragraph at lines 13--14
  [][] 
  []
 
-[3
+[7
 
 ] (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd)
 Underfull \hbox (badness 1019) in paragraph at lines 52--52
 []\OT1/cmr/m/n/10.95 The app is in-stalled but the owner
  []
 
-[4 </home/aida/ASA/Pictures/main_use_cases.png>] [5]
+[8 </home/aida/ASA/Pictures/main_use_cases.png>] [9]
 Underfull \hbox (badness 1454) in paragraph at lines 110--110
 []\OT1/cmr/m/n/10.95 Main server com-pares ac-counts cur-
  []
@@ -1401,46 +1404,51 @@ Underfull \hbox (badness 1292) in paragraph at lines 110--110
 \OT1/cmr/m/n/10.95 rently con-nected with ac-counts con-
  []
 
-) [6] (/home/aida/ASA/technical_context.tex [7])
-(/home/aida/ASA/ext_interfaces.tex [8])) [9]
+) [10] (/home/aida/ASA/technical_context.tex [11])
+(/home/aida/ASA/ext_interfaces.tex [12])) [13]
 Chapter 4.
-(/home/aida/ASA/sol_strategy.tex) [10
+(/home/aida/ASA/sol_strategy.tex
+
+LaTeX Warning: Reference `chp:arch_constr' on page 14 undefined on input line 1
+.
+
+) [14
 
 ]
 Chapter 5.
-(/home/aida/ASA/build_block.tex) [11
+(/home/aida/ASA/build_block.tex) [15
 
 ]
 Chapter 6.
-(/home/aida/ASA/runtime.tex) [12
+(/home/aida/ASA/runtime.tex) [16
 
 ]
 Chapter 7.
-(/home/aida/ASA/deployment.tex) [13
+(/home/aida/ASA/deployment.tex) [17
 
 ]
 Chapter 8.
 (/home/aida/ASA/concepts.tex (/home/aida/ASA/domain_model.tex)
 (/home/aida/ASA/patterns.tex) (/home/aida/ASA/security.tex)
-(/home/aida/ASA/compatibility.tex) (/home/aida/ASA/reliability.tex)) [14
+(/home/aida/ASA/compatibility.tex) (/home/aida/ASA/reliability.tex)) [18
 
 ]
 Chapter 9.
-(/home/aida/ASA/design_decisions.tex) [15
+(/home/aida/ASA/design_decisions.tex) [19
 
 ]
 Chapter 10.
-(/home/aida/ASA/quality_scenarios.tex) [16
+(/home/aida/ASA/quality_scenarios.tex) [20
 
 ] (/home/aida/ASA/main.tdo)
 \tf@tdo=\write10
 \openout10 = `main.tdo'.
 
- [17
+ [21
 
 ]
 Appendix A.
-(/home/aida/ASA/time_tracking.tex) [18
+(/home/aida/ASA/time_tracking.tex) [22
 
 ]
 Overfull \hbox (17.13295pt too wide) in paragraph at lines 153--153
@@ -1454,28 +1462,32 @@ Overfull \hbox (10.20537pt too wide) in paragraph at lines 153--153
 ited on 01/08/2017). 
  []
 
-[19
+[23
 
 
-] [20]
+] [24]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (/home/aida/ASA/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3F732CD8154DDFA23DBDA006FC9FE984;1503.
+(rerunfilecheck)             Checksum: 052C1F4A32B62A96438E6DF766BC6A2A;2167.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  )
 (\end occurred when \iftrue on line 84 was incomplete) 
 Here is how much of TeX's memory you used:
- 25874 strings out of 493029
- 472545 string characters out of 6136233
+ 25912 strings out of 493029
+ 473005 string characters out of 6136233
  789849 words of memory out of 5000000
- 28827 multiletter control sequences out of 15000+600000
- 9669 words of font info for 34 fonts, out of 8000000 for 9000
+ 28848 multiletter control sequences out of 15000+600000
+ 9976 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,72p,1149b,1915s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf
@@ -1487,10 +1499,10 @@ msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmsl10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 sy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/aida/ASA/main.pdf (27 pages, 879375 bytes).
+Output written on /home/aida/ASA/main.pdf (31 pages, 893003 bytes).
 PDF statistics:
- 372 PDF objects out of 1000 (max. 8388607)
- 327 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 239 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 401 compressed objects within 5 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

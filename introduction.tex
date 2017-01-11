@@ -1,0 +1,20 @@
+\section{Introduction}
+Traveling by train is one of the most common means of transport in the Netherlands and the Western Europe. The majority of people use trains on a daily basis, to go to school, work, etc. It is quite easy and comfortable, but one common problem, that everyone may relate to is the discomfort of train tickets. The printed tickets might get lost, or a passenger might forget to check in, another one is too late to buy one, etc. 
+
+However, we have come up with an alternative train ticket, which will facilitate the journey of many passengers: \ac{ET}. This is a new, promising and innovative technology that suits practically everyone who owns a smartphone. The idea  behind \ac{ET} is very simple: you download an app in your smartphone, open your personal account and connect it to your favorite payment method, and \ac{ET} will do everything else automatically. 
+
+This means, every train will have beacons, which will connect to the passenger’s phones via  bluetooth, it will check the passenger in,  it will automatically calculate the ticket fee and it will reconnect  when the passenger leaves the train. There will be a beacon per every gateway. The beacon can detect the mobile in a diameter of 20m.
+
+The aim of this new technology is to facilitate the journey of train passangers, and take the ticket purchasing to the next level. We plan to implement \ac{ET} firsly in Groningen and after the initial success the aim of our company is to cover the whole Netherlands. 
+
+In this document we are presenting the architecture of our system. In the next chapters you will be introduced to the Stakeholders of the systems and their concerns, the requirements, functional and non-functional.  In section 3, we will briefly analyze the business context and the benefits that \ac{ET} will brings in terms of business. In section 4, the solution strategy is presented, in terms of our main key drivers. Section 5 outlines the building block view, whereas chapter 6 and 7 introduce the runtime and deployment view. The architecture of our system will be concluded with the design decisions and quality scenarios. 
+
+\section{Quality goals}
+
+The top three goals of the architecture of Easy Ticketing whose fulfillment is of highest importance to the major stakeholders (as agreed between them) are listed below:
+
+\textbf{Security} In our system, we could view the importance of security in two major aspects: Firstly, hackers might hack the system and steal money from the account of the train company and secondly, passengers might find a way to fake their tickets. In both cases, this is unacceptable for our customer under any circumstance. Therefore the system must be designed in such way that potential data leaks, which are in theory inevitable, will not result in access to the main database or create damage to the company.
+
+\textbf{Reliability}  Customers are expected to rely on the functioning of Easy Ticketing. Problems with availability of the service are almost as undesirable as security issues, therefore availability must be taken into account throughout the whole system architecture. Breakdown of the system could lead to financial loss for the company, which is in any case not acceptable.
+
+\textbf{Compatibility} Is an important driver for our system. Passengers may be in possession to different smartphones, which may result in incompatibility with the beacon, incompatible frequencies of bluetooth. It is very important to provide the passengers the possibility to purchase the ticket, for as many phone versions as possible.
