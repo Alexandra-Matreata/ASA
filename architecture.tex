@@ -1,0 +1,37 @@
+In this chapter the architecture of the system will be described. The 4+1 model will be used. We will be describing  the logical view, the physical view, the process view and the data view. 
+The logical view shows the functional decomposition of the architecture into components.
+the process view shows behavioral aspects of the system, the data flow view defines the data, the relation
+between data entities, how the data flows through the system and the measures to ensure reliability and
+performance. The physical view shows the physical entities and storage units as well as the deployment
+scenario.
+
+\section{Logical View}
+This view shows the connections between structural elements, key abstractions and mechanisms that are used within SFM. At first, an overview of the components is provided. The main components of the system will be displayed in terms of layers. Next, the main components are decomposed a in term of responsibilities and interfaces.
+
+\subsection{Primary presentation}
+In order to design the software architecture of \ac{ET}, the layers pattern is used. This pattern is best suitable for the system since it gives the opportunity to abstract layers from one another, which increases the availability of the system by modularizing the components. The modularization of the components increases also the scalability and the performance of the system. 
+The system has been structured according to the three-layers approach. The three main components: Mobile app, Interface and the Storage, can be seen in the figure below. This approach will help satisfying the following non-functional
+requirements: .. as well as all the performance requirements.
+
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{Pictures/arch.png}
+  \caption{Overview of the System}
+  \label{fig:system}
+\end{figure}
+
+
+\textbf{Mobile app} is the main component of our system. It will be available for download for the users and it will provide a personalized and unique account for the passengers. They can use this account to login and pay for their ticket, every time they use the trains. The calculation of the ticket fees is also done in this layer. The data collected from this layer is then sent to the other layers.
+
+\textbf{User Interface} This layer provides the maintenance team access to the system via a graphical user interface. There will be a team that will manage the system in order to check the usage of the system, or to maintain it in general and report any faults or misfunctions to the maintenance team.
+
+\textbf{Storage and Beacon API} The database and the Beacon Interface are included in this layer. The data that is provided from the Mobile app layer, will be stored in the database after the mobile phone has connected to the beacon.
+
+
+\subsection{Element Catalog}
+
+
+\section{Process View}
+\section{Data View}
+\section{Physical View}

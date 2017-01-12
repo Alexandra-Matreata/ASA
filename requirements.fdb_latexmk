@@ -1,12 +1,14 @@
 # Fdb version 3
-["pdflatex"] 1484133770 "requirements.tex" "/home/aida/ASA/requirements.pdf" "requirements" 1484133770
+["pdflatex"] 1484141730 "requirements.tex" "/home/aida/ASA/requirements.pdf" "requirements" 1484141730
   "/etc/texmf/web2c/texmf.cnf" 1476384546 1101 af7716885e081ab43982cab7b4672c1a ""
   "/home/aida/ASA/requirements.aux" 1484133254 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
   "/usr/share/texmf/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1476384633 3854709 b581bdb95766b6af67f4f574e416c04f ""
-  "requirements.tex" 1484133769 1823 11847fda1287202e56806c25362ab32e ""
+  "requirements.tex" 1484141729 10207 b8e776f95b349b854fd471511ddbe036 ""
   (generated)
-  "requirements.log"
   "/home/aida/ASA/requirements.log"
+  "requirements.log"
   "/home/aida/ASA/requirements.pdf"
