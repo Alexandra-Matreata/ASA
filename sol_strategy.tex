@@ -1,7 +1,55 @@
-This chapter aims to discuss and present a concrete solution space for the problems described in chapters \ref{chp:arch_constr} and  \ref{chp:syst_context}. The solutions provided will directly follow the main key drivers of the project and focus on the problem space using views limited only to these most important attributes.
+This chapter aims to discuss and present a concrete solution space for the problems described in chapter  \ref{chp:syst_context}. The solutions provided will directly follow the main key drivers of the project and focus on the problem space using views limited only to these most important attributes.
 
 \section{Security}
+Different security measures will be taken into account so that the information transferred between different components is not visible to external parties and remains consistent throughout the exchange.
+
+In this manner, the security mechanisms will focus mostly on the interface levels:
+
+\begin{itemize}
+	\item \textbf{Beacon to phone:} \\
+	Beacons taking part in the system will be uniquely identifiable via its id and mac address. When a phone connects to a beacon, the beacon's identity will be checked against a list of valid beacons by the mobile app. 
+	
+	Only if the beacon is found in the list, the connection is validated and the mobile app sends the account information to the beacon, thus keeping account information secret from external parties. 
+	\item \textbf{Beacon to local server:} \\
+	Similarly to the beacon verrification performed by the mobile app once a connection between the beacon and the phone is established, another verification will be performed at the level of the local server.
+	
+	The local server will check the identity of each beacon sending it information against a list similar to the one available to the mobile app. 
+	
+	As a second security mechanism, before sending information to the server, the beacons will also check the identity of above mentioned server based on a hashCode. 
+	
+	\item \textbf{Local to central server:} \\
+	Every time the main server receives information from a local server, the identity of the local server will be checked using the hashCode mentioned for the previous connection. 
+	
+	Also, before sending any information to the central server, every local server will ask the central server to identify itself using a cryptographic key.
+\end{itemize}
+
 
 \section{Compatibility}
+The compatibility of the system mainly refers to mobile phones compatibility. The system will take into consideration different types of OS and different frequencies. While not all of these possibilities are taken into consideration, the system will focuss on the most used ones:
+
+\begin{itemize}
+	\item OS compatibility(Compatibility-NF-1.1):
+	\begin{itemize}
+		\item Android
+		\item iOS
+		\item Windows
+	\end{itemize}
+	\item frequency: the beacons will send out 10 packages every second(Apple recommendation for optimal retrieval of packages\cite{web:beacons})
+\end{itemize}
 
 \section{Reliability}
+The reliability of the system takes into consideration 3 main characteristics: availability, fault tolerance and recoverability\cite{iso}.
+\begin{itemize}
+	\item \textbf{Availability:} \\
+	Both the local and central servers will be provided with backup servers. The information stored in the local backup servers will be updated every time the train leaves a station, while the central backup server will be updated more frequently, namely every time the central server receives information from one of the local servers. 
+	
+	This will allow the backup servers to be fully up to date and to minimize information loss. The backup servers will remain in a passive mode and only become functional once their corresponding main server fails to respond. Once the main server is repaired, information handling will be switched to it and the backup server will return to passive mode.
+	
+	Every time a main server receives information(local server from beacons and main server from local one), it will notify the senders of having received the packages through a heartbeat signal. If this signal fails to be sent, the backup server will be started.
+	
+	\item \textbf{Fault tolerance:} \\
+	Fault tolerance will be achieved by the system using resource redundancy and duplication of information. By using the backup servers and updating their information regularly, a copy of the information will be stored at all times minimizing information loss. Also, the beacons will be placed in such a manner as to have intersecting range areas, allowing at least two beacons to monitor a specific location in the same time.
+	
+	\item \textbf{Recoverability:} \\
+	By enabling components to keep track of received information packages, the system state is known at each point in time, which allows a very fast detection of defective components. By minimizing error detection time, the recoverability time is also minimized.
+\end{itemize}

@@ -1,0 +1,105 @@
+The following diagram displays the use cases of the system. The main use cases will be further described in use case scenarios:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=500pt]{Pictures/main_use_cases.png}
+	\caption{Main use cases}
+	\label{fig:main_use_cases}
+\end{figure}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Usecase}      & Connect phone to beacon \\ \hline
+		\textbf{Main actor}  & Phone app \\ \hline
+		\textbf{Goal}   & Connect to the beacon \\ \hline
+		\textbf{Preconditions}     & \begin{itemize}
+			\item Bluetooth is switched on
+			\item App is installed
+			\item Train has left the station
+		\end{itemize} \\ \hline
+		\textbf{Main scenario}    & \begin{itemize}
+			\item The beacon discovers the phone
+			\item The phone receives a notification from the beacon
+			\item The beacon saves the account information locally
+		\end{itemize} \\ \hline
+		\textbf{Exception scenarios} & 
+		\begin{itemize}
+			\item The app doesn’t get the notification because
+			the phone is off
+			\item The app doesn’t get the notification, due to a
+			communication failure 
+			\item The beacon fails to detect the phone
+			\item The app is installed but the owner doesn't have an account
+		\end{itemize}
+		\\ \hline
+		\textbf{Postconditions} & 
+		\begin{itemize}
+			\item Phone is connected
+			\item Information exchange between phone and beacon
+		\end{itemize}
+		
+		\\ \hline
+		\textbf{Related requirements} & NFR2, FR2, NFR3\\ \hline
+	\end{tabularx}
+	\caption{Main use cases - }
+	\label{tbl:uc1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Usecase}      &  Disconnect from beacon\\ \hline
+		\textbf{Main actor}  & Beacon \\\hline
+		\textbf{Goal}   &  Register a phone disconnection \\ \hline
+		\textbf{Precondition}     &  \begin{itemize}
+			\item Bluetooth is switched on
+			\item Use case 1
+		\end{itemize}\\ \hline
+		\textbf{Main scenario}    &  \begin{itemize}
+			\item The user leaves the train
+			\item The beacon checks available connections
+			\item The beacon sends gathered information to local server
+			\item Local server sends information to main server
+			\item Main server computes distance travelled by user
+		\end{itemize}\\ \hline
+		\textbf{Exception scenarios} & \begin{itemize}
+			\item Phone battery dies before user leaves the train
+			\item The beacon malfunctions and cannot check for connections
+		\end{itemize}\\ \hline
+		\textbf{Postconditions} & Travel distance and price are computed\\ \hline
+		\textbf{Related requirements} & NFR3, FR3, FR10, FR9 \\ \hline
+	\end{tabularx}
+	\caption{Main use cases - use case 2}
+	\label{tbl:uc2}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Usecase}  &  Calculate travel fee\\ \hline
+		\textbf{Main actor}  & Server\\ \hline
+		\textbf{Goal}   &  Charge user for travelled distance\\ \hline
+		\textbf{Precondition} & \begin{itemize}
+			\item Usecase 1
+			\item Usecase 2
+		\end{itemize} \\ \hline
+		\textbf{Main scenario}  & \begin{itemize}
+			\item Main server receives information regarding users which are still connected
+			\item Main server compares accounts currently connected with accounts connected for previous stop
+			\item Users which were connected previously and are not connected anymore are identified
+			\item Travel distance and fee are calculated for identified users
+		\end{itemize} \\ \hline
+		\textbf{Exception scenarios} & \begin{itemize}
+			\item Information cannot be transmitted between local and main servers
+			\item Account is not identified
+		\end{itemize}\\ \hline
+		\textbf{Postconditions} & \begin{itemize}
+			\item Notification regarding payment is sent to user
+			\item Payment is made
+		\end{itemize}\\ \hline
+		\textbf{Related requirements} & FR3, FR9, FR10, FR13\\ \hline
+	\end{tabularx}
+	\caption{Main use cases - use case 3}
+	\label{tbl:uc3}
+\end{table}
