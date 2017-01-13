@@ -20,80 +20,82 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Business context}{4}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.2}Business drivers}{5}{section.2.2}
+\contentsline {section}{\numberline {2.2}Business drivers}{4}{section.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Logical view}{5}{section.2.3}
+\contentsline {subsection}{\numberline {2.2.1}Revenue streams}{5}{subsection.2.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.4}Domain model}{5}{section.2.4}
+\contentsline {subsection}{\numberline {2.2.2}Costs}{5}{subsection.2.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Technical context}{5}{section.2.5}
+\contentsline {section}{\numberline {2.3}Domain model}{5}{section.2.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}External interfaces}{6}{section.2.6}
+\contentsline {section}{\numberline {2.4}Technical context}{6}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Requirements}{8}{chapter.3}
+\contentsline {section}{\numberline {2.5}External interfaces}{7}{section.2.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Stakeholders}{8}{section.3.1}
+\contentsline {chapter}{\numberline {3}Requirements}{9}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.1}Represented stakeholders}{8}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.1}Stakeholders}{9}{section.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.1.2}Non represented stakeholders}{9}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.1}Represented stakeholders}{9}{subsection.3.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Key Drivers}{9}{section.3.2}
+\contentsline {subsection}{\numberline {3.1.2}Non represented stakeholders}{10}{subsection.3.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Functional requirements}{12}{section.3.3}
+\contentsline {section}{\numberline {3.2}Key Drivers}{10}{section.3.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Non-functional requirements}{13}{section.3.4}
+\contentsline {section}{\numberline {3.3}Functional requirements}{13}{section.3.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Security}{13}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.4}Non-functional requirements}{14}{section.3.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Reliability}{13}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.1}Security}{14}{subsection.3.4.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Compatibility}{13}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.2}Reliability}{14}{subsection.3.4.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Constraints}{13}{section.3.5}
+\contentsline {subsection}{\numberline {3.4.3}Compatibility}{14}{subsection.3.4.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.1}Organisational Constraints}{14}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.5}Constraints}{14}{section.3.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.2}Business Constraints}{14}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.1}Organisational Constraints}{15}{subsection.3.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.5.3}Technological Constraints}{14}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.2}Business Constraints}{15}{subsection.3.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Main Use Cases}{15}{chapter.4}
+\contentsline {subsection}{\numberline {3.5.3}Technological Constraints}{15}{subsection.3.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Solution strategy}{19}{chapter.5}
+\contentsline {chapter}{\numberline {4}Main Use Cases}{16}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Security}{19}{section.5.1}
+\contentsline {chapter}{\numberline {5}Solution strategy}{20}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Compatibility}{20}{section.5.2}
+\contentsline {section}{\numberline {5.1}Security}{20}{section.5.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Reliability}{20}{section.5.3}
+\contentsline {section}{\numberline {5.2}Compatibility}{21}{section.5.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Software architecture}{22}{chapter.6}
+\contentsline {section}{\numberline {5.3}Reliability}{21}{section.5.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Logical View}{22}{section.6.1}
+\contentsline {chapter}{\numberline {6}Software architecture}{23}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}Primary presentation}{22}{subsection.6.1.1}
+\contentsline {section}{\numberline {6.1}Logical View}{23}{section.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Element Catalog}{24}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.1}Primary presentation}{23}{subsection.6.1.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Process View}{24}{section.6.2}
+\contentsline {subsection}{\numberline {6.1.2}Element Catalog}{26}{subsection.6.1.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Data View}{24}{section.6.3}
+\contentsline {section}{\numberline {6.2}Process View}{26}{section.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Physical View}{24}{section.6.4}
+\contentsline {section}{\numberline {6.3}Physical View}{30}{section.6.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Concepts}{25}{chapter.7}
+\contentsline {chapter}{\numberline {7}Architectural patterns}{31}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.1}Architectural patterns}{25}{section.7.1}
+\contentsline {chapter}{\numberline {8}Design decisions}{32}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.2}Security}{25}{section.7.2}
+\contentsline {chapter}{\numberline {9}Evaluation}{33}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.3}Compatibility}{25}{section.7.3}
+\contentsline {section}{\numberline {9.1}Utility tree}{33}{section.9.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {7.4}Reliability}{25}{section.7.4}
+\contentsline {section}{\numberline {9.2}Key driver verification}{34}{section.9.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {8}Design decisions}{26}{chapter.8}
+\contentsline {subsection}{\numberline {9.2.1}Security}{34}{subsection.9.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {9}Quality scenarios}{27}{chapter.9}
+\contentsline {subsection}{\numberline {9.2.2}Compatibility}{34}{subsection.9.2.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {A}Time tracking}{29}{appendix.A}
+\contentsline {subsection}{\numberline {9.2.3}Reliability}{34}{subsection.9.2.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Time tracking}{36}{appendix.A}
