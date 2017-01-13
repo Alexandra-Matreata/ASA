@@ -20,6 +20,7 @@
 *.pdf
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bib
 *.bbl
 *.bcf
 *.blg
@@ -120,7 +121,7 @@ _minted*
 # mylatexformat
 *.fmt
 
-# nomencl
+# nomencl	
 *.nlo
 
 # sagetex
