@@ -1,4 +1,45 @@
+%!TEX root = ../main.tex
 
 \section{Observer Pattern}
 
+\subsection{Description of pattern}
+
+	The observer pattern is used to allow an object to publish changes to its state. Other objects subscribe to be immediately notified of any changes to the status of that particular object. 
+
+	
+\iffalse
+	USAGE : The main server will observe the state of train and Activate the beacons when train leaves a station . We don't need to have the beacons active when at a station 
+beacons observe when phones are in range for establishing connections
+\fi
+
+\paragraph{Traceability} 
+	% related requirements
+	\begin{itemize}
+		\item 1
+	\end{itemize}
+
+\paragraph{Source} \cite{book:design-patterns}
+
+\paragraph{Issue} \label{observerP:issue}
+	The most scalable way and also a fault-proof process for management of passengers both for current and ones who have left the train is to have the phone detection work only before and after the train has passed through a station. Having the train server to monitor beacons would make the solution highly unscalable. An operator would have to manually modify the beacons state in the train server himself. On the other hand the beacons should only have to detect nearby phones' bluetooth once or twice a transition between stations making it highly inefficient for them to be active all the time. Having the server monitor and activate all beacons and receive information about passengers would impact the performance of the solution. 
+
+\iffalse
+
+	Therefore there is a clash of requirements which can be solved by implementing a version of a design pattern called the Observer Pattern configured to suit the needs to both be energy efficient and fault-proof. 
+
+	This however creates an issue that the beacons should be allowed to operate on their own and they should also monitor the state of the train.
+ \fi
+
+
+\paragraph{Solution} 
+	The solution to the problem listed in the \ref{observerP:issue} paragraph would be to server monitor the train and the beacons to listen to events passed through the server. The server will allow the beacons to observe its state and listen to changes in the behaviour. This could be implemented via a design pattern called Observer Pattern explained in more detail in paragraph \ref{observerP:rationale}
+
+
+\paragraph{Rationale} \label{observerP:rationale}
+	Even though the Observer Design Pattern is a pattern related to coding and resolves coding issues this section look at the pattern from a different perspective. The architecture of the solution described in this document uses the Observer Pattern to allow the beacons in the train to monitor the state of the train itself. Once the train has left the station the train server will change the status to 'departed' and through attached listeners, the beacons will start their main functionality - to echo for discovered bluetooths in the particular cart they are located in.
+
+\paragraph{Implications}
+\begin{itemize}
+  \item 
+\end{itemize}
 
