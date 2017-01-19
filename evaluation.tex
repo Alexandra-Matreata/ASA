@@ -1,10 +1,6 @@
 %!TEX root = ./main.tex
 \section{Utility tree}
-The output of the utility tree is a list of scenarios that serves as a plan
-for the remainder of the ATAM evaluation. It shows the evaluation team
-where the most important points are and where to examine the architectural
-approaches and risks. The utility tree is composed of the key drivers of the
-system, which in our case are security, reliability, and compatibility.
+The output of the utility tree is a list of scenarios that serves as a plan for the remainder of the ATAM evaluation. It shows the evaluation team where the most important points are and where to examine the architectural approaches and risks. The utility tree is composed of the key drivers of the system, which in our case are security, reliability, and compatibility.
 
 \begin{figure}[H]
   \centering
@@ -13,9 +9,120 @@ system, which in our case are security, reliability, and compatibility.
   \label{fig:system}
 \end{figure}
 
+\section{Low-level scenarios}
+% SCENARIO 1
+{
+  \renewcommand{\arraystretch}{1.4}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\bfseries}p{4cm}|X}
+      \multicolumn{2}{l}{\textbf{S1} - \textit{Security of the bluetooth connection}} \\
+      \hline
+      Quality attribute & Security \\ \hline
+      Environment       & Normal operation \\ \hline
+      Stimulus          & The passenger uses the app to connect to the beacon through bluetooth. \\ \hline
+      Response          & The passenger receives a confirmation message that the connection has been made and the If the phone doesn't connect than the passenger has no ticket and he/she needs to report it to the ticket inspector. \\ \hline
+    \end{tabularx}
+  \end{table}
+}
+
+{
+  \renewcommand{\arraystretch}{1.4}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\bfseries}p{4cm}|X|X|X|X|X}
+      \textbf{Decision} & \rotatebox[origin=l]{65}{\textbf{Requirement}} & \rotatebox[origin=l]{65}{\textbf{Sensitivity}} & \rotatebox[origin=l]{65}{\textbf{Tradeoff}} & \rotatebox[origin=l]{65}{\textbf{Risk}} & \rotatebox[origin=l]{65}{\textbf{Non-risk}} \\ \hline
+      Beacon & FR-2, FR-10   & FR-9 & TO-1  &FR-7 & FR-8  \\ \hline
+      Mobile app & FR-2, NF-2.3, FR-10,  FR-5 &FR-9 &/&FR-7 & NR-8\\ \hline
+      Database & FR-4,  FR-5 &/ &/ &/ & /\\ \hline
+    \end{tabularx}
+  \end{table}
+}
+
+\subsubsection{Legend}
+{
+  \renewcommand{\arraystretch}{1.4}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\bfseries}p{4cm}|X}
+      FR-2 & The beacons shall connect to a phone's bluetooth and application. \\
+      FR-5 & Phones should be verified based on accounts. \\
+      FR-7 & The beacons will start connecting to mobile devices once the train is 300m away from the station.\\
+      FR-8 & Phone application should have beacon verification.\\
+      TO-1 & The train will collect data from the carts/beacons and send them to the server  after leaving a station.\\
+      FR-10 & The system should charge on trip exit. \\
+      FR-13 & The beacons register both logged in and not logged in users and match the account with the phone even if the user logs in later on during the journey.\\
+      NFR-2.3 & The beacons inside the carts will be operational at all times when the train is working.\\
+      SP-1 &  The train will collect data from the carts/beacons and send them to the server  after leaving a station. If the passenger will be  charged after starting the train journey, then it might result in a problem in cases when his app is not working or the bluetooth connection was not established.
+      
+
+
+    \end{tabularx}
+  \end{table}
+}
+
+\subsubsection{Reasoning}
+
+
+The connection between the phone and the beacon should normally be done properly without any problems. However, the maintenance team is suposed to check the problem regularly.  "The train will collect data from the carts/beacons and send them to the server  after leaving a station" is a tradeoff point since the collection of data during the rush hours might affect performance negatively.
+
+
+\newpage
+
+% SCENARIO 2
+{
+  \renewcommand{\arraystretch}{1.4}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\bfseries}p{4cm}|X}
+      \multicolumn{2}{l}{\textbf{S2} - \textit{Maintain availability of system}} \\
+      \hline
+      Quality attribute & Availability \\ \hline
+      Environment & A beacon is under maintenance \\ \hline
+      Stimulus & Maintenance employee notices downtime of the beacon \\ \hline
+      Response & The maintenance team is notified about the downtime and will check what the cause of the downtime is. Depending on the nature, a field member is sent on-site to investigate and possibly resolve the issue. \\ \hline
+    \end{tabularx}
+  \end{table}
+}
+%The beacons inside the carts will be operational at all times when the train is working.
+{
+  \renewcommand{\arraystretch}{1.4}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\bfseries}p{4cm}|X|X|X|X|X}
+      \textbf{Decision} & \rotatebox[origin=l]{65}{\textbf{Requirement}} & \rotatebox[origin=l]{65}{\textbf{Sensitivity}} & \rotatebox[origin=l]{65}{\textbf{Tradeoff}} & \rotatebox[origin=l]{65}{\textbf{Risk}} & \rotatebox[origin=l]{65}{\textbf{Non-risk}} \\ \hline
+      Beacon & NF-2.3, NF-2.2 & / & / & / & / \\ \hline
+      Db Backup & NF-2.4 & S-1 & TO-1 & R-1 & / \\ \hline
+    \end{tabularx}
+  \end{table}
+}
+
+\subsubsection{Legend}
+{
+  \renewcommand{\arraystretch}{1.4}
+  \begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{>{\bfseries}p{4cm}|X}
+      S-1 & Backup data adds more complexity to the system, since local storage data should be pushed to the central database as well; no overlaps should occur, data needs to be stored and consistency needs to be maintained. \\
+      TO-1 & Backup will require more space (hence money), while increasing the reliability of the system. \\
+      NF-2.3 & The beacons inside the carts will be operational at all times when the train is working. \\
+      NF-2.2 & The system must be fault tolerant..\\
+      NF-2.4 & The Server/database will be 99.999\% available , with backups . 
+    \end{tabularx}
+  \end{table}
+}
+
+\subsubsection{Reasoning}
+
+The system will be in continuous surveliance from the maintenance team, in case anything is wrong. The backup storage is in any case of downtime available. 
+\newpage
+
+
 \section{Key driver verification}
 In this section, we analyse and verify the patterns used for the system according to the key drivers that have been selected by the stakeholders.\\
 To perform this analysis, we place the key drivers and patterns in a table and show how each key driver is affected by the selected pattern \cite{web:patterns-v-QAs} . In order to perform this analysis, a scale is used to show how much a specific key driver is affected where,
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 %\begin{description}
 \begin{itemize}
   \item[--] the pattern has the worst effect on the key driver
@@ -24,6 +131,22 @@ To perform this analysis, we place the key drivers and patterns in a table and s
   \item[+] the pattern has a good effect although not the best  
   \item[++] the pattern has the best possible effect on the particular key driver
 \end{itemize}
+=======
+=======
+>>>>>>> Stashed changes
+
+%\begin{description}
+%\begin{itemize}
+ % \item[-- --] the pattern has the worst effect on the key driver
+ % \item[--] the pattern has a bad but not terrible effect
+ % \item[/] the pattern's effect on the key driver is neutral
+  %\item[+] the pattern has a good effect although not the best  
+  %\item[++] the pattern has the best possible effect on the particular key driver
+%\end{itemize}
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
 %\end{description}
 As a reference for some of the weightings depicted in the table, 
 
