@@ -1,25 +1,27 @@
 %!TEX root = ./main.tex
+
 \documentclass[11pt, oneside]{book}
 
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
 % page layout
-\usepackage{float}  
+\usepackage{float}
 \usepackage{ragged2e}
 \usepackage{rotating}
 
 % toc renaming
 \addto\captionsenglish{
-  \renewcommand{\listfigurename}{List of figures}
-  \renewcommand{\listtablename}{List of tables}
+	\renewcommand{\listfigurename}{List of figures}
+	\renewcommand{\listtablename}{List of tables}
 }
-
 % bib
 \usepackage[
-  backend=bibtex,
-  style=ieee,
-  maxcitenames=4]{biblatex}
+backend=bibtex,
+style=ieee,
+maxbibnames=4,
+maxcitenames=4]{biblatex}
+
 \usepackage{csquotes}
 \usepackage[nottoc]{tocbibind}
 
@@ -52,7 +54,7 @@
 \setlength\parindent{24pt}
 
 \hypersetup{
-  colorlinks=false, pdfborder={0 0 0},
+	colorlinks=false, pdfborder={0 0 0},
 }
 
 \crefname{lstlisting}{listing}{listings}
@@ -65,20 +67,20 @@
 \usepackage{todonotes}
 
 \lstset{frame=tb,
-  language=Java,
-  aboveskip=3mm,
-  belowskip=3mm,
-  showstringspaces=false,
-  columns=flexible,
-  basicstyle={\small\ttfamily},
-  numbers=none,
-  numberstyle=\tiny\color{gray},
-  keywordstyle=\color{blue},
-  commentstyle=\color{dkgreen},
-  stringstyle=\color{mauve},
-  breaklines=true,
-  breakatwhitespace=true,
-  tabsize=3
+	language=Java,
+	aboveskip=3mm,
+	belowskip=3mm,
+	showstringspaces=false,
+	columns=flexible,
+	basicstyle={\small\ttfamily},
+	numbers=none,
+	numberstyle=\tiny\color{gray},
+	keywordstyle=\color{blue},
+	commentstyle=\color{dkgreen},
+	stringstyle=\color{mauve},
+	breaklines=true,
+	breakatwhitespace=true,
+	tabsize=3
 }
 
 \begin{document}
