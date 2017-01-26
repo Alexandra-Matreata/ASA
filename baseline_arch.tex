@@ -1,0 +1,31 @@
+%!TEX root = main.tex
+\section{Architectural style}
+
+\section{Tactics}
+
+\subsection{Compatibility Tactics}
+
+\subsection{Security Tactics}
+
+Below we are briefly describing the security tactics applied for our system.
+\begin{itemize} 
+
+\item \textbf{Authenticate users}
+Authentication is ensuring that a user or remote computer is actually who it purports to be.In our system (ET), every user of the mobile app needs to be authorized by inserting their personal info data. 
+
+\item \textbf{Authorize users}
+Authorization is ensuring that an authenticated user has the rights to access and modify either data or services. This is usually managed by providing some access control patterns within a system. Easy Ticketing has implemented a system, where the user will receive a notification by the time they establish a bluetooth connection with the beacon.
+
+\item \textbf{Maintain data confidentiality} 
+Data should be protected from unauthorized access. Confidentiality is usually achieved by applying some form of encryption to data and to communication links. Encryption provides extra protection to persistently maintained data beyond that available from authorization. 
+
+\item \textbf{Maintain integrity} Data should be delivered as intended. It can have redundant information encoded in it, such as checksums or hash results, which can be encrypted either along with or independently from the original data.
+
+\item \textbf{Limit exposure} Attacks typically depend on exploiting a single weakness to attack all data and services on a host. The architect can design the allocation of services to hosts so that limited services are available on each host.
+
+\item \textbf{Limit access} Firewalls restrict access based on message source or destination port. Messages from unknown sources may be a form of an attack. It is not always possible to limit access to known sources. In our case Easy Ticketing  expects requests from mobile app users and from third party payment systems.  One configuration used in our case is the so-called demilitarized zone (DMZ). 
+\end{itemize} 
+
+
+
+\subsection{Reliability Tactics}
