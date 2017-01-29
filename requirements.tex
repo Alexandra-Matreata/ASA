@@ -89,12 +89,12 @@ In order to determine the most important key drivers for our system, the stakeho
     \centering
     \begin{tabularx}{\linewidth}{l|l|X}
      	FR-1 & Must & There should be at least 2 different ways of payment. \\ \hline
-     	FR-2 & Must & The beacons shall connect to a phone's bluetooth and application.\\ \hline
-     	FR-3 & Must & The system MUST/WILL/HAVE TO charge a person based on account/travel location. \\
+     	FR-2 & Must & The beacons must connect to a phone's bluetooth and application.\\ \hline
+     	FR-3 & Must & The system must charge a person based on account/travel location. \\
      	\hline
-     	FR-4 & Must & The system should verify which cart sends which data (or train actually). \\
+     	FR-4 & Optional & The system should verify which train is responsible for sending which part of the data. \\
      	\hline
-     	FR-5 & Must & Phones should be verified based on accounts.\\ \hline        
+     	FR-5 & Must & Phones must be verified based on accounts.\\ \hline        
      	FR-6 & Must & The system should provide a back-up to log out of the trip in case battery dies, via touch-screen panels in stations.\\ \hline
      	FR-7 & Must & The beacons will start connecting to mobile devices once the train is 300m away from the station.\\ \hline
     	FR-8 & Must & Phone application should have beacon verification.\\	\hline
@@ -103,7 +103,7 @@ In order to determine the most important key drivers for our system, the stakeho
     	FR-11 & Must & Once a connection between a beacon and a phone is established, the system must send a notification to the user’s phone.\\ 	\hline
 	    FR-12 & Must & Application provides a user interface enabling the user to check his account, update amounts.
         \\	\hline
-	    FR-13 & Must & The beacons register both logged in and not logged in users and match the account with the phone even if the user logs in later on during the journey. \\ \hline
+	    FR-13 & Optional & The beacons register both logged in and not logged in users and match the account with the phone even if the user logs in later on during the journey. \\ \hline
       FR-13 & Must & The payment should be secure. \\
 
     \end{tabularx}
@@ -133,10 +133,10 @@ In order to determine the most important key drivers for our system, the stakeho
   \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{l|l|X}
-      NF-2.1 &Must & The databases must be available 99.9999\% of the time during a train journey.\\ \hline
+      NF-2.1 &Must & The local storage units inside the train must be available 99.9999\% of the time during a train journey.\\ \hline
       NF-2.2 &Must & The system must be fault tolerant.  \\ \hline
-      NF-2.3 &Must & The beacons inside the carts will be operational at all times when the train is working. \\ \hline
-      NF-2.4 &Must & The Server/database will be 99.999\% available , with backups . \\  
+      NF-2.3 &Must & At least 80\% of the beacons inside a train must be operational at all times when the train is working. \\ \hline
+      NF-2.4 &Must & The central Server unit must be 99.999\% available, with backups. \\  
     \end{tabularx}
   \end{table}
 }
