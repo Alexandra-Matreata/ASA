@@ -1,7 +1,8 @@
 %!TEX root = main.tex
-\section{Architectural style}
-
+This chapter will provide information regarding the baseline architectural decisions taken for implementing the Easy Ticketing system. The first section will outline the main tactics used related to the key drivers and section \ref{chp:design_decisions} will describe the main architectural decisions.
+ 
 \section{Tactics}
+This section outlines the tactics used for implementing the three most important quality attributes for the system.
 
 \subsection{Compatibility Tactics}
 
@@ -29,3 +30,36 @@ Data should be protected from unauthorized access. Confidentiality is usually ac
 
 
 \subsection{Reliability Tactics}
+The following tactics implemented for increasing the reliability of the system have been extracted from \cite{tactics-reliability}.
+
+\begin{itemize}
+
+\item \textbf{Ping-Echo}
+The Ping-Echo mechanism is used for checking the availability of a specific component or part of the application. A component sends a ping request to the component we wish to monitor at periodic intervals. If the monitored component fails to reply, it can be deducted that the respective component is unresponsive or that a failure occurred. In this case, maintenance operations may be started for that particular component.
+
+This tactic helps improve reliability by notifying operators of failures in the system in a timely manner, which will decrease the time needed for maintenance operations and improve the system's time between failures and overall availability. 
+
+For the case of the Easy Ticketing system, this tactic has been implemented for monitoring the activity of the main server component.
+
+\item \textbf{Raising Exceptions}
+This tactic needs to be implemented at component level and for as many components as possible. Each component should be able to detect specific faults or errors regarding the system's behaviour in certain conditions and raise an exception in order to notify its presence.
+
+By implementing this tactic, the system's fault tolerance is increased proportionally to the number of exceptions being raised(and handled respectively).
+
+In the case of the Easy Ticketing system, this tactic has been implemented for all main components(beacons, local servers, main server, mobile application). The specific exceptions raised by each component, as well as the way in which these are handled will be further explained in chapter \ref{chp:soft_arch}.
+
+\item \textbf{Active or passive redundancy}
+Resource redundancy is one of the most common tactics used for increasing the reliability of a system. Although it introduces performance drawbacks and it increases the effort needed for maintenance, resource redundancy helps deal with failure at a component level and greatly increases the availability and fault tolerance of the system.
+
+Resource redundancy has been introduced as follows:
+\begin{enumerate}
+	\item Passive redundancy for the main server component(in connection to the master-slave replication pattern described in chapter \ref{chp:patterns})
+	
+	\item Active redundancy for the local components inside the train carts(beacons and local servers) as part of the replicated systems pattern described in chapter \ref{chp:patterns}
+\end{enumerate}
+
+\end{itemize}
+
+\section{Design decisions}
+\label{chp:design_decisions}
+\input{design_decisions.tex}
