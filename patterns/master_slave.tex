@@ -1,6 +1,8 @@
 %!TEX root = ../main.tex
 
-\section{}
+\section{Master Slave}
+
+	The master/slave replication pattern is a helpful pattern for easily maintaining copies of a database by having them automatically copied to any designated server for backup.  
 
 	\subsection{Traceability} 
 		% related requirements
@@ -8,14 +10,14 @@
 			\item 1
 		\end{itemize}
 
-	\subsection{Source} \cite{book:design-patterns}
-
 
 	\subsection{Problem}
 
+		Data received should be stored and regularly backed up to a separate database. The second database should not be allowed to directly receive data from any component as the two databases will clash and data would be randomly separated between them.
 
 	\subsection{Solution} 
 
+		Prohibit the second data base to receive any outside data and have the missing data from the master data base get copied into the back up. This will guarantee that everything from the master database is backed up and no missing data will exist.
 
 
 \paragraph{Implications}
