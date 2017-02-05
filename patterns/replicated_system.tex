@@ -2,23 +2,23 @@
 
 \section{Replicated system}
 
-\subsection{Description of pattern}
+\subsubsection{Description of pattern}
 
 The replicated systems pattern is used for the components located inside the train carts, namely the beacons and local servers. This will allow multiple components to perform the same operations in the same time and introduce resource redundancy.
 
-\subsection{Source} \cite{book:design-patterns}
+\subsubsection{Source} \cite{book:design-patterns}
 
-\subsection{Issue} 
+\subsubsection{Issue} 
 In case of a fault regarding a specific component in the system, a back-up solution needs to be provided in order for the system to continue functioning at full capacity. If a single beacon or server would be allocated per train and one of them would fail, the information corresponding to the trips taken with that particular train instance would be lost.
 
-\subsection{Solution}
+\subsubsection{Solution}
 The replicated system pattern introduces resource redundancy such that at any point in time, at least two components perform the same operations.
 
-\subsection{Rationale}
+\subsubsection{Rationale}
 In order to implement the solution described above for the case of Easy Ticketing system, the beacons are placed such that each area of the cart is monitored by two beacons. Also, a backup server will be allocated per train and perform all operations as the main one in the same time(gather data from beacons, send data to server).
 
 
-\subsection{Implications}
+\subsubsection{Implications}
 \begin{itemize}
 	\item increase reliability
 	\item decrease performance(response time)

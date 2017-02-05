@@ -5,30 +5,30 @@
 
 Trusted Subsystem : The phone needs the credentials of the beacon in order to send its credentials back to it . The beacon receives credentials from the phone and registers it in the system. 
 	
-	\subsection{Trusted subsystem}
+	\subsubsection{Trusted subsystem}
 	The trusted subsystem is a pattern that allows and enforces authorized access to resources on one or more ends of a communication stream.
 
 
-	\subsection{Traceability} 
+	\subsubsection{Traceability} 
 		% related requirements
 		\begin{itemize}
 			\item 1
 		\end{itemize}
 
-	\subsection{Source} \cite{book:design-patterns}
+	\subsubsection{Source} \cite{book:design-patterns}
 
-	\subsection{Issue} \label{trustedP:issue}
+	\subsubsection{Issue} \label{trustedP:issue}
 
 		There is a major requirement concerning security. Every single phone app needs to now that the device trying to connect to it is a legitimate beacon as it would be very suspicious for just any device to be able to connect to the phone. On the other hand the beacons require the same amount of security when accessing phones as not every phone is a registered phone in the system. Thus in order to improve security and provide knowledge for the both the phone validation to the beacon and vice versa.
 
 
-	\subsection{Solution} 
+	\subsubsection{Solution} 
 
 		An appropriate solution would be to allow both the phone to legitimize to the beacon and the beacon to be able to legitimize to the phone. There is a design pattern to easily implement an appropriate solution. The Trusted subsystem is a pattern designed to provide and request certain credentials for authentication and authorization from each of the connecting devices.
 
-	\subsection{Rationale} \label{trustedP:rationale}
+	\subsubsection{Rationale} \label{trustedP:rationale}
 
-	\subsection{Implications}
+	\subsubsection{Implications}
 	\begin{itemize}
 
 		\item This type of service relies on authorization and authentication. If a potential attacker could compromise the security layers protecting a device's authentication codes he could gain access to the system and potentially exploit it.

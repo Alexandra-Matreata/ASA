@@ -4,23 +4,23 @@
 
 	The Data replication pattern is a helpful pattern for easily maintaining copies of a database by having them automatically copied to any designated server for backup.  
 
-	\subsection{Traceability} 
+	\subsubsection{Traceability} 
 		% related requirements
 		\begin{itemize}
 			\item 1
 		\end{itemize}
 
-	\subsection{Source} \cite{book:design-patterns}
+	\subsubsection{Source} \cite{book:design-patterns}
 
-	\subsection{Problem}
+	\subsubsection{Problem}
 
 	Data could be lost in case where the server breaks down for any reason. If the main server is broken down or gets attacked and data deleted form it, all the data ever recorded will get lost and will not be recoverable. 
 
-	\subsection{Solution} 
+	\subsubsection{Solution} 
 
 	Introduce a back up solution which will hold the same data as the main one which will be used in case of emergency or main-server downtime. This will stabilise the reliability of the entire system by allowing the backup to act as a main server in cases where the main server is not usable for any reason.
 
-	\subsection{Rationale}
+	\subsubsection{Rationale}
 	The data coming at the master will be sent to the backup in real time so there will be no data loss in case of the main database failure.
 
 \paragraph{Implications}
