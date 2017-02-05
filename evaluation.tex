@@ -121,17 +121,18 @@ The system will be in continuous surveliance from the maintenance team, in case 
 \section{Key driver verification}
 In this section, we analyse and verify the patterns used for the system according to the key drivers that have been selected by the stakeholders.\\
 To perform this analysis, we place the key drivers and patterns in a table and show how each key driver is affected by the selected pattern \cite{web:patterns-v-QAs} . In order to perform this analysis, a scale is used to show how much a specific key driver is affected where,
-
 As a reference for some of the weightings depicted in the table, 
 
 \begin{table}[H]
     \begin{tabularx}{\textwidth}{p{3.5cm}|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X|>{\centering\arraybackslash}X}
     	 & \textbf{Security} & \textbf{Reliability} & \textbf{Compatibility} \\ \hline
-    	\textbf{replicated system}         & /  & +  &  \\ \hline
-    	\textbf{Model View Controller}  & /  & / &   \\ \hline
-    	\textbf{layers}                    & ++ & /  &   \\ \hline
-    	\textbf{trusted subsystem}         & ++ & /  &   \\ \hline
-    	\textbf{master-slave replication}  & /  & ++ &   \\ \hline
+    	\textbf{replicated system}         & /  & +  & + \\ \hline
+    	\textbf{Model View Controller}  & /  & / & /  \\ \hline
+    	\textbf{layers}                    & ++ & /  &  / \\ \hline
+    	\textbf{trusted subsystem}         & ++ & /  &  / \\ \hline
+    	\textbf{master-slave replication}  & /  & ++ & +  \\ \hline
+	\textbf{data replication}  &  / & ++ & /  \\ \hline
+	\textbf{Observer pattern}  &  / & ++ &  / \\ \hline
 	 \textbf{TOTAL} & \textbf{} & \textbf{} & \textbf{} \\
     \end{tabularx}
     \caption{Key driver verification table}

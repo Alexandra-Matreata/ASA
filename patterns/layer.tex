@@ -1,6 +1,37 @@
 %!TEX root = ../main.tex
 
 
-\section{Layers}
+\section{Layered Architecture}
+	
+	The Layered architecture pattern is based on classes which are designed to work together in a work flow. Having one objective per class creates a modular design which allows for easy change and update of the logic. Each of the classes has one entry and one exit point towards other classes. 
+	
+	\subsection{Traceability} 
+		% related requirements
+		\begin{itemize}
+			\item 1
+		\end{itemize}
+
+	\subsection{Source} \cite{book:design-patterns}
+
+	\subsection{Problem}
+
+	The entire project is broken down into multiple physical components where the each component is working with one or more other ones. Since the components are separated they need to be adapted in such a way to allow easy changes of logic in each component so that those changes do not break the behaviour of other components.
+
+	\subsection{Solution} 
+
+	Create a layered architecture where each component is a separate entity capable of existing on its own. This breaking down of logic will allow for easy replacement or updates of components without interfering with any other component. 
+
+	\subsection{Rationale} \label{Layers:rationale}
+
+	Breaking down the architecture to components provide an impact on the development itself. It is possible to have different teams work and specialise on different components. All the Layers in this architecture are reusable and easily modifiable. 
 
 
+\paragraph{Implications}
+\begin{itemize}
+	\item 
+	An architecture based on a layered system will have to be designed so that each different component has a defined entry and exit points which should not change at any point during the life cycle of the project. Each change of one of those points would require all other components linked to it to be changed as well and this will increase work effort greatly.
+
+	\item Increase Maintainability
+	\item Increase Security
+	\item Decrease Performance
+\end{itemize}
