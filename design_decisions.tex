@@ -1,1 +1,80 @@
 %!TEX root = main.tex
+
+In this section, the major design decisions made about our system are discussed, the reasoning behind their selection is presented with their possible alternatives if available.
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Name}      & Bluetooth beacons \\ \hline
+		\textbf{Decision ID}  & DD1 \\ \hline
+		\textbf{Alternative(s)}     & Train wifi  \\ \hline
+		\textbf{Description}   & Bluetooth beacons are hardware transmitters that communicate with nearby portable devices. Each cart shall have at least 2 beacons making the connections to the users' devices strong and reliable. \\ \hline
+		\textbf{Rationale}    & The use of bluetooth beacons over wi-fi was selected because in addition to it ensuring no compatibility issues, the beacons are also able to identify the position of the connected devices so, this helps with the pricing of the tickets that is between first class and second class if the system can know where a passenger is seated. This also helps the system know when a person leaves the train. \\ \hline
+	\end{tabularx}
+	\caption{Design Decisions - DD1}
+	\label{tbl:uc1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Name}      & Mobile Applications\\ \hline
+		\textbf{Decision ID}  & DD2 \\ \hline
+		\textbf{Alternative(s)}     & Web application \\ \hline
+		\textbf{Description}   & Mobile applications shall be developed for the main operating systems that is Android, IOS and Windows. More emphasis shall be put on the development of applications for Android and IOS given that they have the largest market shares meaning more users are likely to have devices with this operating system.\\ \hline
+		\textbf{Rationale}    & The use of a mobile application makes this system easy for the users to access and use. The mobile application also ensures the security of the system and the user since both the beacon and the device have to exchange security information before they can start exchanging other information. \\ \hline
+	\end{tabularx}
+	\caption{Design Decisions - DD2}
+	\label{tbl:uc1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Name}      & Local server\\ \hline
+		\textbf{Decision ID}  & DD3 \\ \hline
+		\textbf{Alternative(s)}     & NA \\ \hline
+		\textbf{Description}   & This will be where information about the users' travel information will be temporarily stored before it is sent off to the central server for processing. This component will have at least 50gb storage available to it.\\ \hline
+		\textbf{Rationale}    & This component ensures there is no data lost during a journey given that the long journeys could reach areas without access to the internet hence losing the connection to the central server and if the local server is not available, it will lead to data loss. \\ \hline
+	\end{tabularx}
+	\caption{Design Decisions - DD3}
+	\label{tbl:uc1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Name}      & Central server \\ \hline
+		\textbf{Decision ID}  & DD4 \\ \hline
+		\textbf{Alternative(s)}     & NA  \\ \hline
+		\textbf{Description}   & This is the final data storage point and where the calculation of the journey prices are calculated. The central server will consist of the database and computational units. It shall also be connected to an external payment system where the train journeys will be securely paid for. \\ \hline
+		\textbf{Rationale}    & The central server is the most vital component of the system and without it, the system wouldn't be able to work.  \\ \hline
+	\end{tabularx}
+	\caption{Design Decisions - DD4}
+	\label{tbl:uc1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Name}      & Mobile app notifications \\ \hline
+		\textbf{Decision ID}  & DD5 \\ \hline
+		\textbf{Alternative(s)}     & NA  \\ \hline
+		\textbf{Description}   & The mobile application shall notify the users when a beacon connects to their device and to it.\\ \hline
+		\textbf{Rationale}    & This feature ensures that if the application is on and the user has already paid for a ticket, they don't end up paying again through the system. \\ \hline
+	\end{tabularx}
+	\caption{Design Decisions - DD5}
+	\label{tbl:uc1}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabularx}{\linewidth}{l|X}
+		\textbf{Name}      & Cryptographic key identification \\ \hline
+		\textbf{Decision ID}  & DD6 \\ \hline
+		\textbf{Alternative(s)}     &  NA \\ \hline
+		\textbf{Description}   & The Local server and central server shall communicate with each other after the local server identifies itself using a cryptographic key.\\ \hline
+		\textbf{Rationale}    & This feature ensures the security of the central server as it will have vital data and should not be able to be accessed by any other unknown external systems. \\ \hline
+	\end{tabularx}
+	\caption{Design Decisions - DD6}
+	\label{tbl:uc1}
+\end{table}
