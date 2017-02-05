@@ -37,6 +37,53 @@ The system has been structured according to the three-layers approach. The three
   \label{fig:logical}
 \end{figure}
 
+\subsection{Element Catalog}
+The element catalog describes the components mentioned in the figures above.
+
+\subsubsection{Mobile app}
+The app is abstracted by the mobile app component. It is responsible for gathering the information needed by the MobileApp such as the personal info the passenger is sending. It is directly connected to the Store account info component, in order to store the data gathered by the passengers.
+
+\subsubsection{Create account}
+This component is responsible for creating the passenger's account, with all the personal data such as name, password and username regarding the passenger. This component is directly connected to the Verify account component. It first needs to verify account in order to create it.
+
+\subsubsection{Connect Bluetooth} is another component that will handle the connection with the beacon. We can notice in the figure above that there are two Connect bluetooth components, one belonging to Mobile Application layer and the other one belonging to the Beacon Interface layer. These two components have to establish a connection in order to proceed with the ticketing. 
+
+\subsubsection{Check-in}
+This component regulates the checkin of the passenger. In order for the system to start processing the ticket fee and the journey of the passenger, it needs to connect to the beacon and to check-in, in the moment that the passenger gets in the train. 
+\subsubsection{Check-out} 
+The same way as the  Check-in component works, this component checks out the passenger in the moment that he/she walks out of the train. It needs to reconnect to the beacon in order to check the passenger out and to verify that the journey is finished.
+
+\subsubsection{Store account info}
+The store account info is the temporary where all the information that comes from the previous layer is stored . This is the local storage. It is directly connected to the <<Mobile app>> component, and is the first storage. It also connects to the central storage.
+
+\subsubsection{Verify account}
+Verifies that the information provided by the passengers is indeed correct and not fraud. In this component certain complex security algorithms are also implemented, in order to increase the overall security of the system and in particular to have a secure authentication of the passenger.
+
+\subsubsection{Connect Bluetooth}
+This component is strongly interconnected with the component we have mentioned above. This one belongs to the "Beacon Iterface" layer. It guarantees the connection between the phone and the beacon.
+
+\subsubsection{Establish Bluetooth Connection} 
+In order for the ticketing to succeed, it is very important for an  establishment of the bluetooth connection to happen. 
+
+\subsubsection{Payment request} 
+This component is part of the Database layer, where data is stored and processed in order to calculate the final fee. 
+Firstly a payment is requested, and it is sent for authorization. Once the authorization is confirmed then the payment needs to  be calculated.
+
+\subsubsection{Authorize payment}
+This component connects to the previous one, the Payment request, in order to confirm the authorization of the payment, as it was previously mentioned. After the confirmation, this unit sends a request to the Computational unit in order to process the ticket fee.
+
+\subsubsection{Database}
+The central database stores and computes the data that is gathered from the previous layers. The central database is the main database, where everything is stored and where transactions are made. It interacts also with the third party payment system. 
+
+\subsubsection{Authorize Account}
+After the account is created it needs to be authorized. This component gets the request from the database layer. 
+
+\subsubsection{Computational Unit}
+The computational unit processes the ticket fee. It calculates the amount of the fee based on the journey of the passenger with the Calculate fee component.
+
+
+
+
 \section{Process View}
 This section describes the main processes performed by the system following some of the main use cases presented in chapter \ref{chp:usecases}. The following system sequence diagrams will help detail every such process by displaying the main information flows between different actors and system components in a chronological manner.
 
