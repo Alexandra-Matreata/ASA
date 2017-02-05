@@ -2,25 +2,26 @@
 
 \section{Master Slave}
 
-	The master/slave replication pattern is a helpful pattern for easily maintaining copies of a database by having them automatically copied to any designated server for backup.  
-
-	\subsubsection{Traceability} 
-		% related requirements
-		\begin{itemize}
-			\item 1
-		\end{itemize}
-
+	The master slave replication pattern introduces passive resource redundancy by allowing a back-up(slave) component to remain on stand-by until the master component fails, at which point it can take over the work load until the main component is repaired.
 
 	\subsubsection{Problem}
 
-		Data received should be stored and regularly backed up to a separate database. The second database should not be allowed to directly receive data from any component as the two databases will clash and data would be randomly separated between them.
+		In case of a failure at the level of the main central server, the system can no longer perform until the error is repaired. A back-up solution is needed in order to keep the system available even in case of such a failure.
 
 	\subsubsection{Solution} 
 
-		Prohibit the second data base to receive any outside data and have the missing data from the master data base get copied into the back up. This will guarantee that everything from the master database is backed up and no missing data will exist.
+		Introduce a back-up server component able to perform the same functionalities as the main one and using the same or a similar database which is updated in real time(no differences between the two databases should be noticeable at any point).
+		
+	\subsubsection{Rationale}
+	
+	The back-up server component can monitor the main server using a Ping/Echo signal determining its state while remaining in a passive mode(only the database is updated in real time, while all other requests and computations are performed by the main component). Once the main component fails to respond, the slave component takes over the work load until the main component is repaired.
+	
 
 
 \paragraph{Implications}
 \begin{itemize}
-	\item
+	\item increase reliability
+	\item slight decrease in performance
+	\item increase maintainability effort
+	
 \end{itemize}
